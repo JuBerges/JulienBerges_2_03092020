@@ -186,7 +186,7 @@ header li:nth-child(3):hover {
 }
 #principale {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
   padding: 20px;
   flex-direction: column;
@@ -229,7 +229,7 @@ header li:nth-child(3):hover {
 .element {
   background: #ffffff;
   padding: 0;
-  margin: 20px;
+  margin: 15px 0 15px 0;
   border-radius: 15px;
   max-width: 250px;
   box-shadow: 2px 2px 8px gray;
@@ -240,7 +240,6 @@ header li:nth-child(3):hover {
 p {
   padding-left: 15px;
   margin: 5px 0 8px 0;
-  background: #ffffff;
 }
 .element div {
   padding-left: 15px;
@@ -256,28 +255,37 @@ p {
   margin: 0 0 0 15px;
 }
 #populaire img {
-  height: 90px;
-  width: auto;
+  height: 100px;
+  width: 100px;
   border-radius: 15px 0 0 15px;
   object-fit: cover;
+  padding: 5px 0 2px 5px;
 }
 #pop {
   display: flex;
   width: auto;
   flex-direction: row;
   justify-content: space-between;
+  margin: 20px 40px 10px 40px;
 }
 #pop i {
   padding-top: 22px;
 }
+
 .element-p {
-  background: #ffffff;
-  padding: 10px;
-  margin: 20px;
+  display: flex;
+  margin: 5px 30px 30px 30px;
   border-radius: 15px;
-  width: auto;
+  width: 270px;
   box-shadow: 2px 2px 8px gray;
   border-radius: 15px;
+  font-size: 0.7em;
+}
+.element-p h3,
+p,
+.star {
+  padding-left: 15px;
+  margin: 5px 0 8px 0;
 }
 /*star rating*/
 .checked {
@@ -291,18 +299,63 @@ p {
   display: flex;
   flex-direction: column;
   width: auto;
+  margin: 0;
+}
+#autre h2 {
+  padding-top: 40px;
 }
 #autre img {
-  height: 100px;
-  width: 120px;
+  width: 250px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
 }
 #other {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: auto;
 }
-
+.element-a {
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px gray;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 10px 10px 40px 10px;
+}
+#act-w-1 img {
+  height: 350px;
+}
+#pom {
+  height: 150px;
+}
+#frio {
+  height: 110px;
+}
+#act-w-3 img {
+  height: 350px;
+}
+#gard {
+  height: 130px;
+}
+#long {
+  height: 130px;
+}
+figcaption {
+  padding: 15px 0 15px 15px;
+}
 /* Pied de page*/
-
+footer {
+  display: flex;
+  background: #f2f2f2;
+  margin-left: 0;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+footer h4 {
+  padding-left: 40px;
+}
+footer div {
+  margin-right: 120px;
+}
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 1024px) {
