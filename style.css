@@ -13,6 +13,7 @@ body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   margin-left: 50px;
   margin-right: 50px;
+  width: auto;
 }
 
 ul {
@@ -22,6 +23,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+#container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
 
 /* En-tête */
 header {
@@ -30,7 +36,9 @@ header {
 }
 #logo {
   margin-left: 5px;
+  margin-bottom: 0;
 }
+
 /* Menu header*/
 header ul {
   display: flex;
@@ -62,19 +70,20 @@ header li:nth-child(3):hover {
 
 #search {
   margin-top: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 #search h1 {
-  margin-bottom: 50px;
+  margin-top: 0px;
   font-size: 1.5em;
-  height: 30px;
+  margin-bottom: 0;
 }
 #search p {
   margin-bottom: 0;
+  margin-top: 0;
 }
 #search_bar {
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 #pin {
@@ -92,7 +101,7 @@ header li:nth-child(3):hover {
   border: none;
   outline-color: #0065fc;
 }
-#search ::-webkit-input-placeholder {
+#search ::placeholder {
   font-weight: bold;
   color: black;
 }
@@ -110,15 +119,24 @@ header li:nth-child(3):hover {
 
 #filtres {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-weight: bold;
+  font-size: 1.1em;
 }
 #i_filtres {
   display: flex;
-  margin-left: 50px;
+  margin-left: 0;
+}
+#i_filtres span:nth-child(2) {
+  padding: 5px 10px 5px 25px;
+  border: solid 2px #f2f2f2;
+  border-radius: 50px;
 }
 #filtres i {
   color: #0065fc;
+}
+#f_titre {
+  padding-top: 6px;
 }
 #f_eco {
   margin-left: 40px;
@@ -144,26 +162,123 @@ header li:nth-child(3):hover {
 #f_pets i:nth-child(1) {
   color: #deebff;
 }
-
-/*info places*/
+/* info places */
 #info {
   display: flex;
+  margin-bottom: 40px;
 }
 #info i {
   color: #0065fc;
   height: 30px;
   width: 30px;
 }
-#info span {
-  margin-left: 30px;
+#info span:nth-child(2) {
+  justify-content: space-around;
+  margin: auto auto auto 30px;
 }
 #info i:nth-child(1) {
   color: #f2f2f2;
 }
 /* Hébergement */
-
-/* les plus populaires aside */
-
+#art-wrapper {
+  display: flex;
+  width: auto;
+}
+#principale {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  background: #f2f2f2;
+  border-radius: 15px;
+  align-self: flex-start;
+}
+#principale h2 {
+  margin: 20px 0 10px 20px;
+}
+#principale img {
+  height: 90px;
+  width: 200px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  padding: 5px 5px 0 5px;
+}
+#more a {
+  width: auto;
+  font-weight: bold;
+  margin: 50px 0 20px 20px;
+  padding-bottom: 10px;
+  font-size: 1.1em;
+}
+#articles {
+  width: auto;
+}
+#article_1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+#article_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+.element {
+  background: #ffffff;
+  padding: 0;
+  margin: 20px;
+  border-radius: 15px;
+  max-width: 250px;
+  box-shadow: 2px 2px 8px gray;
+  border-radius: 15px;
+  font-size: 0.8em;
+}
+.element h3,
+p {
+  padding-left: 15px;
+  margin: 5px 0 8px 0;
+  background: #ffffff;
+}
+.element div {
+  padding-left: 15px;
+  margin: 5px 0 8px 0;
+}
+/* les plus populaires */
+#populaire {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  background: #f2f2f2;
+  border-radius: 15px;
+  margin: 0 0 0 15px;
+}
+#populaire img {
+  height: 90px;
+  width: auto;
+  border-radius: 15px 0 0 15px;
+  object-fit: cover;
+}
+#pop {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#pop i {
+  padding-top: 22px;
+}
+.element-p {
+  background: #ffffff;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 15px;
+  width: auto;
+  box-shadow: 2px 2px 8px gray;
+  border-radius: 15px;
+}
 /*star rating*/
 .checked {
   color: #0065fc;
@@ -172,6 +287,19 @@ header li:nth-child(3):hover {
   color: lightgray;
 }
 /* Activités */
+#autre {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+#autre img {
+  height: 100px;
+  width: 120px;
+}
+#other {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* Pied de page*/
 
