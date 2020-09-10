@@ -118,6 +118,9 @@ header li:nth-child(3):hover {
   font-size: 16px;
   outline: none;
 }
+.search_loop {
+  display: none;
+}
 /*FILTRES*/
 
 #filtres {
@@ -131,7 +134,7 @@ header li:nth-child(3):hover {
   margin-left: 0;
 }
 #i_filtres span:nth-child(2) {
-  padding: 5px 10px 5px 25px;
+  padding: 5px 10px 5px 30px;
   border: solid 2px #f2f2f2;
   border-radius: 50px;
 }
@@ -141,33 +144,32 @@ header li:nth-child(3):hover {
 #filtres i {
   color: #0065fc;
 }
-#f_titre {
-  padding-top: 6px;
-}
-#f_eco {
+#f_eco,
+#f_fam,
+#f_love,
+#f_pets {
   margin-left: 40px;
+  position: relative;
 }
 #f_eco i:nth-child(1) {
   color: #deebff;
 }
-#f_fam {
-  margin-left: 40px;
-}
 #f_fam i:nth-child(1) {
   color: #deebff;
-}
-#f_love {
-  margin-left: 40px;
 }
 #f_love i:nth-child(1) {
   color: #deebff;
 }
-#f_pets {
-  margin-left: 40px;
-}
 #f_pets i:nth-child(1) {
   color: #deebff;
 }
+.move-i {
+  display: inline;
+  position: absolute;
+  top: -7px;
+  left: -14px;
+}
+
 /* info places */
 #info {
   display: flex;
@@ -370,5 +372,11 @@ footer div {
 @media screen and (max-width: 1024px) {
   h1 {
     color: red;
+  }
+  header {
+    display: none;
+  }
+  .search_button {
+    display: none;
   }
 }
