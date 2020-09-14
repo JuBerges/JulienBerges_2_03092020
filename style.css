@@ -99,8 +99,8 @@ header li:nth-child(3):hover {
   padding: 11px 10px 10px 14px;
 }
 #search input {
-  height: 40px;
-  border: none;
+  height: 36px;
+  border: #f2f2f2 1px solid;
   outline-color: #0065fc;
 }
 #search ::placeholder {
@@ -118,7 +118,7 @@ header li:nth-child(3):hover {
   outline: none;
   cursor: pointer;
 }
-.search_loop {
+.search_loupe {
   display: none;
 }
 /*FILTRES*/
@@ -411,7 +411,33 @@ footer div {
   header {
     display: none;
   }
+  #search input {
+    height: 36px;
+    border-radius: 0px 10px 10px 0;
+    border: #f2f2f2 1px solid;
+    outline-color: #0065fc;
+  }
   .search_button {
     display: none;
+  }
+  .search_loupe {
+    display: flex;
+  }
+  #search_loupe i {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+  }
+  #search button {
+    position: relative;
+    background: #0065fc;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
   }
 }
