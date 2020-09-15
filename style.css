@@ -210,7 +210,7 @@ header li:nth-child(3):hover {
 #principale {
   display: flex;
   flex-wrap: nowrap;
-  width: 65%;
+  width: 60%;
   padding: 20px;
   flex-direction: column;
   background: #f2f2f2;
@@ -274,15 +274,15 @@ p {
 /* les plus populaires */
 #populaire {
   display: flex;
-  width: 30%;
+  width: 40%;
   flex-direction: column;
   background: #f2f2f2;
   border-radius: 15px;
   margin: 0 0 0 15px;
 }
 #populaire img {
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 120px;
   border-radius: 15px 0 0 15px;
   object-fit: cover;
   padding: 5px 0 2px 5px;
@@ -292,7 +292,8 @@ p {
   width: auto;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 40px 10px 40px;
+  margin: 20px 30px 0px 30px;
+  font-size: 1.2em;
 }
 #pop i {
   display: flex;
@@ -427,7 +428,7 @@ footer div {
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 980px) {
   body {
     width: 100%;
     padding: 0;
@@ -476,7 +477,6 @@ footer div {
     border-bottom: #0065fc 2px solid;
   }
   #filtres {
-    display: flex;
     flex-direction: column;
     pointer-events: none;
   }
@@ -497,6 +497,7 @@ footer div {
     display: flex;
     margin-top: 20px;
     margin-bottom: 10px;
+    justify-content: center;
   }
   #search input {
     border-radius: 0px 10px 10px 0;
@@ -526,6 +527,9 @@ footer div {
     font-size: 16px;
     outline: none;
     cursor: pointer;
+  }
+  #info {
+    margin-left: 13px;
   }
   #art-wrapper {
     display: flex;
@@ -600,8 +604,5 @@ footer div {
   footer {
     flex-direction: column;
     width: 100%;
-  }
-  footer div {
-    margin: 0 auto;
   }
 }
