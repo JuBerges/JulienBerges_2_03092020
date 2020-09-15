@@ -210,12 +210,12 @@ header li:nth-child(3):hover {
 #principale {
   display: flex;
   flex-wrap: nowrap;
-  width: 60%;
+  width: 65%;
   padding: 20px;
   flex-direction: column;
   background: #f2f2f2;
   border-radius: 15px;
-  align-self: flex-start;
+  position: relative;
 }
 #principale h2 {
   margin: 20px 0 10px 20px;
@@ -226,11 +226,16 @@ header li:nth-child(3):hover {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
+.down {
+  display: flex;
+  flex-direction: column;
+}
 #more a {
   width: 100%;
   font-weight: bold;
-  margin: 50px 0 20px 20px;
-  padding-bottom: 10px;
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
   font-size: 1.1em;
 }
 #articles {
@@ -263,18 +268,14 @@ header li:nth-child(3):hover {
   font-size: 0.8em;
 }
 .element h3,
-p {
-  padding-left: 15px;
-  margin: 5px 0 8px 0;
-}
+.element p,
 .element div {
-  padding-left: 15px;
-  margin: 5px 0 8px 0;
+  margin: 5px 0 8px 2px;
 }
 /* les plus populaires */
 #populaire {
   display: flex;
-  width: 40%;
+  width: 35%;
   flex-direction: column;
   background: #f2f2f2;
   border-radius: 15px;
@@ -312,10 +313,10 @@ p {
   background: #ffffff;
   box-shadow: 2px 2px 8px gray;
   border-radius: 15px;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 .element-p h3,
-p {
+.element-p p {
   padding-left: 15px;
   margin: 5px 0 8px 0;
 }
@@ -479,6 +480,8 @@ footer div {
   #filtres {
     flex-direction: column;
     pointer-events: none;
+    width: 90%;
+    margin-left: 20px;
   }
 
   #f_eco,
@@ -494,7 +497,6 @@ footer div {
     margin: 0 0 0 20px;
   }
   #search_bar {
-    display: flex;
     margin-top: 20px;
     margin-bottom: 10px;
     justify-content: center;
@@ -532,7 +534,6 @@ footer div {
     margin-left: 13px;
   }
   #art-wrapper {
-    display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
     width: 100%;
@@ -555,14 +556,17 @@ footer div {
     width: 90%;
   }
   #article_1 {
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
   #article_2 {
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  #more a {
+    bottom: -49px;
+    left: -4px;
+    width: initial;
   }
   #populaire {
     width: 100%;
@@ -577,25 +581,23 @@ footer div {
     margin: 0;
     align-items: center;
   }
+  #autre h2 {
+    width: 90%;
+    padding-top: 60px;
+  }
   #other {
     align-items: center;
     flex-direction: column;
-    width: 90%;
   }
-  #act-w-1 {
-    width: 90%;
-  }
-  #act-w-2 {
-    width: 90%;
-  }
-  #act-w-3 {
-    width: 90%;
-  }
+  #act-w-1,
+  #act-w-2,
+  #act-w-3,
   #act-w-4 {
-    width: 90%;
+    width: 100%;
   }
   .element-a {
     width: 90%;
+    margin: 20px auto;
   }
   #autre img {
     height: 150px;
@@ -604,5 +606,9 @@ footer div {
   footer {
     flex-direction: column;
     width: 100%;
+  }
+  footer div {
+    margin: 20px 0;
+    height: initial;
   }
 }
