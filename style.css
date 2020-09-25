@@ -1,5 +1,12 @@
-/* Couleurs #0065FC #DEEBFF #F2F2F2*/
-/* polices */
+/*
+  Prototype de nouveau design du site Reservia
+  @author: Berges Julien.
+  @version 1.0
+
+  Couleurs #0065FC #DEEBFF #F2F2F2
+  */
+
+/* polices du site*/
 
 @font-face {
   font-family: "Raleway";
@@ -21,7 +28,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 ul {
   list-style: none;
 }
@@ -31,12 +37,12 @@ a {
 }
 
 /* En-tête */
+
 header {
   display: flex;
   width: 90%;
   margin: auto;
 }
-
 #logo {
   margin-left: 0;
   margin-bottom: 0;
@@ -64,7 +70,7 @@ header li:hover {
   margin: 33px 0px 0px 53px;
 }
 
-/* Recherche */
+/* style de la barre de recherche */
 
 #search {
   margin-top: 20px;
@@ -120,7 +126,8 @@ header li:hover {
 .search_loupe {
   display: none;
 }
-/*FILTRES*/
+
+/* <style des Filtres*/
 
 #filtres {
   display: flex;
@@ -175,7 +182,8 @@ header li:hover {
   font-size: 1.3em;
 }
 
-/* info places */
+/* info logements dispos */
+
 #info {
   display: flex;
   margin-bottom: 40px;
@@ -192,7 +200,8 @@ header li:hover {
 #info i:nth-child(1) {
   color: #f2f2f2;
 }
-/* Hébergement */
+/* Section Hébergement */
+
 #art-wrapper {
   display: flex;
 }
@@ -244,6 +253,9 @@ header li:hover {
   border-radius: 15px;
   width: 100%;
 }
+
+/* Pour cartes de la section hébergement */
+
 .element {
   display: flex;
   flex-direction: column;
@@ -261,7 +273,9 @@ header li:hover {
 .element div {
   margin: 5px 0 8px 2px;
 }
-/* les plus populaires */
+
+/* Aside les plus populaires */
+
 #populaire {
   display: flex;
   width: 35%;
@@ -294,6 +308,9 @@ header li:hover {
   margin-left: 30px;
   margin-right: 30px;
 }
+
+/* Carte de l'aside les plus populaire */
+
 .element-p a {
   display: flex;
   margin: 5px 0px 30px 0px;
@@ -319,14 +336,18 @@ header li:hover {
   left: 0;
   bottom: 5px;
 }
+
 /*star rating*/
+
 .checked {
   color: #0065fc;
 }
 .unchecked {
   color: lightgray;
 }
+
 /* Activités */
+
 #autre {
   display: flex;
   flex-direction: column;
@@ -346,6 +367,9 @@ header li:hover {
   flex-wrap: nowrap;
   width: 100%;
 }
+
+/* Pour les cartes de la section Activités */
+
 .element-a {
   border-radius: 15px;
   box-shadow: 2px 2px 8px gray;
@@ -400,6 +424,7 @@ figcaption {
 }
 
 /* Pied de page*/
+
 footer {
   display: flex;
   background: #f2f2f2;
@@ -430,6 +455,9 @@ footer div {
   #logo {
     margin: 16px 0px 0px 20px;
   }
+
+  /*header mobile*/
+
   header ul {
     margin: 0;
     padding: 0;
@@ -459,6 +487,8 @@ footer div {
     padding: 0;
   }
 
+  /*filtres version mobile*/
+
   #filtres {
     flex-direction: column;
     pointer-events: none;
@@ -472,6 +502,9 @@ footer div {
   #f_pets {
     margin: 25px 0 10px 15px;
   }
+
+  /*Recherche version mobile*/
+
   #search h1 {
     margin: 20px 0 0 20px;
   }
@@ -512,9 +545,15 @@ footer div {
     outline: none;
     cursor: pointer;
   }
+
+  /*Logements dispos version mobile*/
+
   #info {
     margin-left: 13px;
   }
+
+  /*hébergement version mobile*/
+
   #art-wrapper {
     flex-direction: column-reverse;
     flex-wrap: wrap;
@@ -550,6 +589,9 @@ footer div {
     left: -4px;
     width: initial;
   }
+
+  /*Aside populaire version mobile*/
+
   #populaire {
     width: 100%;
     margin: 0;
@@ -558,6 +600,9 @@ footer div {
   #populaire h4 {
     font-size: 1.5em;
   }
+
+  /*Section Activités version mobile*/
+
   #autre {
     flex-direction: column;
     margin: 0;
@@ -585,6 +630,7 @@ footer div {
     height: 150px;
   }
   /* Footer */
+
   footer {
     flex-direction: column;
     width: 100%;

@@ -1,3 +1,8 @@
+<!--
+  Prototype de nouveau design du site Reservia
+  @author: Berges Julien.
+  @version 1.0
+-->
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -8,48 +13,55 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Reservia</title>
+    <!--Script pour récupération des icônes sur fontawesome-->
     <script
       src="https://kit.fontawesome.com/b0ba1016b2.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!--Header avec logo, nav et lien d'inscription-->
     <header>
       <figure id="logo">
         <img src="./images/logo/Reservia.svg" alt="logo" />
       </figure>
       <nav>
         <ul>
-          <li><a class="menu" href="#host">Hébergements</a></li>
-          <li><a class="menu" href="#acts">Activités</a></li>
+          <li><a href="#host">Hébergements</a></li>
+          <li><a href="#acts">Activités</a></li>
         </ul>
       </nav>
       <a id="sign-in" href="">S'inscrire</a>
     </header>
 
     <div id="container">
+      <!--Description du site-->
       <div id="search">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <div id="search_bar">
+          <!--Icône de la barre de recherche-->
           <div id="pin">
             <i class="fas fa-map-marker-alt"></i>
           </div>
           <div id="search_input">
             <input type="text" placeholder="  Marseille, Paris" />
           </div>
+
           <div id="search_button">
+            <!--Bouton de recherche version desktop-->
             <button class="search_button"><strong>Rechercher</strong></button>
           </div>
-          <!--recherche version smartphone-->
+
           <div id="search_loupe">
+            <!--Bouton de recherche version smartphone-->
             <button class="search_loupe">
               <strong><i class="fas fa-search"></i></strong>
             </button>
           </div>
         </div>
       </div>
-      <!-- Fin de recherche version smartphone-->
+      <!--Partie dédiée aux filtres de recherche-->
       <nav id="filtres">
         <div id="f_titre">
           <span>Filtres</span>
@@ -93,7 +105,7 @@
           </div>
         </div>
       </nav>
-
+      <!--Infos logements dispo-->
       <div id="info">
         <span class="fa-stack">
           <i class="far fa-circle fa-stack-2x"></i>
@@ -103,10 +115,12 @@
       </div>
 
       <div id="art-wrapper">
+        <!--section principale Hébergements-->
         <section id="principale">
           <h2 id="host">Hébergements à Marseille</h2>
           <article>
             <div id="articles">
+              <!--Première ligne de la section hébergement-->
               <div id="article_1">
                 <div class="element">
                   <a href="">
@@ -160,6 +174,7 @@
                   </a>
                 </div>
               </div>
+              <!--Deuxieme ligne de la section hébergement-->
               <div id="article_2">
                 <div class="element">
                   <a href="">
@@ -217,8 +232,8 @@
             <span id="more"><a href="">Afficher plus</a></span>
           </article>
         </section>
-
-        <article id="populaire">
+        <!--Partie aside pour logements populaires-->
+        <aside id="populaire">
           <div id="pop">
             <h4>Les plus populaires</h4>
             <i class="fas fa-chart-line"></i>
@@ -293,9 +308,9 @@
               </a>
             </div>
           </div>
-        </article>
+        </aside>
       </div>
-
+      <!--Section Activités-->
       <section id="autre">
         <h2 id="acts">Activités à Marseille</h2>
         <div id="other">
@@ -382,6 +397,7 @@
         </div>
       </section>
     </div>
+    <!--Bas de page avec liens d'aide et d'infos divers-->
     <footer>
       <div>
         <h4>A propos</h4>
